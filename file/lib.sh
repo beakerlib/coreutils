@@ -90,6 +90,30 @@ fileCreate() {
     return $?
 }
 
+true <<'=cut'
+=pod
+
+=head1 FUNCTIONS
+
+=head2 randomFileCreate
+
+Create a random file
+
+    randomFileCreate
+
+=over
+
+=back
+
+Returns 0 when the file is successfully created, non-zero otherwise.
+
+=cut
+
+randomFileCreate() {
+    source ${BASH_SOURCE%/*}/../scripts/random_file.sh
+    return $?
+}
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #   Execution
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,8 @@
+summary: Example of a beakerlib library
+contact: Petr Šplíchal <psplicha@redhat.com>
+test: ./test.sh
+framework: beakerlib
+require:
+  - coreutils
+  - pattern: random_file.sh
+    type: file
